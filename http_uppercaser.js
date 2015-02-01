@@ -12,7 +12,7 @@ var port = process.argv[2]; // Assume first argument is the port
 
 var server = http.createServer(function (req, res) {
 	if (req.method != 'POST') {
-		return res.end('send me a POST\n')
+		return res.end('send me a POST\n');
 	}
 
 	res.writeHead(200, { 'content-type': 'text/plain' });
