@@ -19,5 +19,5 @@ var port = process.argv[2]; // Assume first argument is the port
 var server = net.createServer(function (socket) {
   var result = (strftime('%F %R\n'));
   socket.end(result);
-})
+});
 server.listen(port);
